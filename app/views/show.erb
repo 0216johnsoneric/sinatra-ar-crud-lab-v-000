@@ -9,7 +9,7 @@
     <h2>
     <p><%= @article.content %></p>
     </h2>
-    <form method="POST" action="/articles/<%= @article.id %>/articles">
+    <form method="POST" action="/articles/<%= @article.id %>">
       <input id="hidden" type="hidden" name="_method" value="delete" >
       <input type="submit" value="delete">
     </form>
