@@ -32,14 +32,14 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
-  patch '/articles/:id' do
-    binding.pry
-    @article = Article.find_by_id(params[:id])
-    @article.name = params[:name]
-    @article.content = params[:content]
-    @article.save
-    erb :show
-  end
+  # patch '/articles/:id' do
+  #   binding.pry
+  #   @article = Article.find_by_id(params[:id])
+  #   @article.name = params[:name]
+  #   @article.content = params[:content]
+  #   @article.save
+  #   erb :show
+  # end
 
 
 end
